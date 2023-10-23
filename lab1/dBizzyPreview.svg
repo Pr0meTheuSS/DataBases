@@ -1,0 +1,231 @@
+<svg width="940" height="769" viewBox="0 0 705 576.75" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="translate(4,373) scale(1)">
+<title>G</title>
+<polygon fill="transparent" stroke="transparent" points="-4,4 -4,-373 676,-373 676,4 -4,4"></polygon>
+<!-- Groups -->
+<g id="node1" class="node" style="opacity: 1;">
+<title>Groups</title>
+<polygon fill="#232d95" stroke="transparent" points="238.5,-54 238.5,-72 434.5,-72 434.5,-54 238.5,-54"></polygon>
+<polygon fill="none" stroke="white" points="238.5,-54 238.5,-72 434.5,-72 434.5,-54 238.5,-54"></polygon>
+<text text-anchor="start" x="241.5" y="-61" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">Groups</text>
+<polygon fill="#404040" stroke="transparent" points="238.5,-36 238.5,-54 434.5,-54 434.5,-36 238.5,-36"></polygon>
+<polygon fill="none" stroke="white" points="238.5,-36 238.5,-54 434.5,-54 434.5,-36 238.5,-36"></polygon>
+<text text-anchor="start" x="241.5" y="-43" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="256.78" y="-43" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="263.78" y="-43" font-family="opensans" font-size="10.00" fill="white"> id INT SERIAL</text>
+<polygon fill="#404040" stroke="transparent" points="238.5,-18 238.5,-36 434.5,-36 434.5,-18 238.5,-18"></polygon>
+<polygon fill="none" stroke="white" points="238.5,-18 238.5,-36 434.5,-36 434.5,-18 238.5,-18"></polygon>
+<text text-anchor="start" x="241.38" y="-24" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;groupname VARCHAR(64) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="238.5,0 238.5,-18 434.5,-18 434.5,0 238.5,0"></polygon>
+<polygon fill="none" stroke="white" points="238.5,0 238.5,-18 434.5,-18 434.5,0 238.5,0"></polygon>
+<text text-anchor="start" x="241.5" y="-7" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="256.78" y="-7" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="263.78" y="-7" font-family="opensans" font-size="10.00" fill="white"> elder INT</text>
+</g>
+<!-- Students -->
+<g id="node4" class="node" style="opacity: 1;">
+<title>Students</title>
+<polygon fill="#232d95" stroke="transparent" points="478,-126 478,-144 672,-144 672,-126 478,-126"></polygon>
+<polygon fill="none" stroke="white" points="478,-126 478,-144 672,-144 672,-126 478,-126"></polygon>
+<text text-anchor="start" x="481" y="-133" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">Students</text>
+<polygon fill="#404040" stroke="transparent" points="478,-108 478,-126 672,-126 672,-108 478,-108"></polygon>
+<polygon fill="none" stroke="white" points="478,-108 478,-126 672,-126 672,-108 478,-108"></polygon>
+<text text-anchor="start" x="481" y="-115" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="496.28" y="-115" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="503.28" y="-115" font-family="opensans" font-size="10.00" fill="white"> id INT SERIAL</text>
+<polygon fill="#404040" stroke="transparent" points="478,-90 478,-108 672,-108 672,-90 478,-90"></polygon>
+<polygon fill="none" stroke="white" points="478,-90 478,-108 672,-108 672,-90 478,-90"></polygon>
+<text text-anchor="start" x="481" y="-96" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;firstname VARCHAR(128) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="478,-72 478,-90 672,-90 672,-72 478,-72"></polygon>
+<polygon fill="none" stroke="white" points="478,-72 478,-90 672,-90 672,-72 478,-72"></polygon>
+<text text-anchor="start" x="481" y="-78" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lastname VARCHAR(128) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="478,-54 478,-72 672,-72 672,-54 478,-54"></polygon>
+<polygon fill="none" stroke="white" points="478,-54 478,-72 672,-72 672,-54 478,-54"></polygon>
+<text text-anchor="start" x="481" y="-60" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;patronymic TEXT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="478,-36 478,-54 672,-54 672,-36 478,-36"></polygon>
+<polygon fill="none" stroke="white" points="478,-36 478,-54 672,-54 672,-36 478,-36"></polygon>
+<text text-anchor="start" x="481" y="-43" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="496.28" y="-43" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="503.28" y="-43" font-family="opensans" font-size="10.00" fill="white"> groupid INT NOT NULL</text>
+</g>
+<!-- Groups&#45;&gt;Students -->
+<g id="edge1" class="edge" style="opacity: 1;">
+<title>Groups:elder-&gt;Students:id</title>
+<path fill="none" stroke="#5ea54a" d="M435.5,-9C483.05,-9 435.21,-100.78 467.86,-115.13"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="467.53,-118.62 478,-117 468.8,-111.74 467.53,-118.62"></polygon>
+</g>
+<!-- Disciplines -->
+<g id="node2" class="node" style="opacity: 1;">
+<title>Disciplines</title>
+<polygon fill="#232d95" stroke="transparent" points="231.5,-278 231.5,-296 442.5,-296 442.5,-278 231.5,-278"></polygon>
+<polygon fill="none" stroke="white" points="231.5,-278 231.5,-296 442.5,-296 442.5,-278 231.5,-278"></polygon>
+<text text-anchor="start" x="234.5" y="-285" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">Disciplines</text>
+<polygon fill="#404040" stroke="transparent" points="231.5,-260 231.5,-278 442.5,-278 442.5,-260 231.5,-260"></polygon>
+<polygon fill="none" stroke="white" points="231.5,-260 231.5,-278 442.5,-278 442.5,-260 231.5,-260"></polygon>
+<text text-anchor="start" x="234.5" y="-267" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="249.78" y="-267" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="256.78" y="-267" font-family="opensans" font-size="10.00" fill="white"> id INT SERIAL</text>
+<polygon fill="#404040" stroke="transparent" points="231.5,-242 231.5,-260 442.5,-260 442.5,-242 231.5,-242"></polygon>
+<polygon fill="none" stroke="white" points="231.5,-242 231.5,-260 442.5,-260 442.5,-242 231.5,-242"></polygon>
+<text text-anchor="start" x="234.11" y="-248" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;disciplinename VARCHAR(64) NOT NULL</text>
+</g>
+<!-- Specializations -->
+<g id="node3" class="node" style="opacity: 1;">
+<title>Specializations</title>
+<polygon fill="#232d95" stroke="transparent" points="27.5,-225 27.5,-243 168.5,-243 168.5,-225 27.5,-225"></polygon>
+<polygon fill="none" stroke="white" points="27.5,-225 27.5,-243 168.5,-243 168.5,-225 27.5,-225"></polygon>
+<text text-anchor="start" x="30.5" y="-232" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">Specializations</text>
+<polygon fill="#404040" stroke="transparent" points="27.5,-207 27.5,-225 168.5,-225 168.5,-207 27.5,-207"></polygon>
+<polygon fill="none" stroke="white" points="27.5,-207 27.5,-225 168.5,-225 168.5,-207 27.5,-207"></polygon>
+<text text-anchor="start" x="30.5" y="-214" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="45.78" y="-214" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="52.78" y="-214" font-family="opensans" font-size="10.00" fill="white"> id INT SERIAL</text>
+<polygon fill="#404040" stroke="transparent" points="27.5,-189 27.5,-207 168.5,-207 168.5,-189 27.5,-189"></polygon>
+<polygon fill="none" stroke="white" points="27.5,-189 27.5,-207 168.5,-207 168.5,-189 27.5,-189"></polygon>
+<text text-anchor="start" x="30.5" y="-196" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="45.78" y="-196" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="52.78" y="-196" font-family="opensans" font-size="10.00" fill="white"> teacher INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="27.5,-171 27.5,-189 168.5,-189 168.5,-171 27.5,-171"></polygon>
+<polygon fill="none" stroke="white" points="27.5,-171 27.5,-189 168.5,-189 168.5,-171 27.5,-171"></polygon>
+<text text-anchor="start" x="30.49" y="-178" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="45.77" y="-178" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="52.77" y="-178" font-family="opensans" font-size="10.00" fill="white"> discipline INT NOT NULL</text>
+</g>
+<!-- Specializations&#45;&gt;Disciplines -->
+<g id="edge3" class="edge" style="opacity: 1;">
+<title>Specializations:discipline-&gt;Disciplines:id</title>
+<path fill="none" stroke="#5ea54a" d="M169.5,-180C213.64,-180 188.05,-255 220.75,-267.3"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="220.56,-270.82 231,-269 221.71,-263.91 220.56,-270.82"></polygon>
+</g>
+<!-- Teachers -->
+<g id="node5" class="node" style="opacity: 1;">
+<title>Teachers</title>
+<polygon fill="#232d95" stroke="transparent" points="239.5,-206 239.5,-224 433.5,-224 433.5,-206 239.5,-206"></polygon>
+<polygon fill="none" stroke="white" points="239.5,-206 239.5,-224 433.5,-224 433.5,-206 239.5,-206"></polygon>
+<text text-anchor="start" x="242.5" y="-213" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">Teachers</text>
+<polygon fill="#404040" stroke="transparent" points="239.5,-188 239.5,-206 433.5,-206 433.5,-188 239.5,-188"></polygon>
+<polygon fill="none" stroke="white" points="239.5,-188 239.5,-206 433.5,-206 433.5,-188 239.5,-188"></polygon>
+<text text-anchor="start" x="242.5" y="-195" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="257.78" y="-195" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="264.78" y="-195" font-family="opensans" font-size="10.00" fill="white"> id INT SERIAL</text>
+<polygon fill="#404040" stroke="transparent" points="239.5,-170 239.5,-188 433.5,-188 433.5,-170 239.5,-170"></polygon>
+<polygon fill="none" stroke="white" points="239.5,-170 239.5,-188 433.5,-188 433.5,-170 239.5,-170"></polygon>
+<text text-anchor="start" x="242.5" y="-176" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;firstname VARCHAR(128) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="239.5,-152 239.5,-170 433.5,-170 433.5,-152 239.5,-152"></polygon>
+<polygon fill="none" stroke="white" points="239.5,-152 239.5,-170 433.5,-170 433.5,-152 239.5,-152"></polygon>
+<text text-anchor="start" x="242.5" y="-158" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lastname VARCHAR(128) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="239.5,-134 239.5,-152 433.5,-152 433.5,-134 239.5,-134"></polygon>
+<polygon fill="none" stroke="white" points="239.5,-134 239.5,-152 433.5,-152 433.5,-134 239.5,-134"></polygon>
+<text text-anchor="start" x="242.5" y="-140" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;patronymic TEXT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="239.5,-116 239.5,-134 433.5,-134 433.5,-116 239.5,-116"></polygon>
+<polygon fill="none" stroke="white" points="239.5,-116 239.5,-134 433.5,-134 433.5,-116 239.5,-116"></polygon>
+<text text-anchor="start" x="242.5" y="-123" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="257.78" y="-123" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="264.78" y="-123" font-family="opensans" font-size="10.00" fill="white"> specialization INT NOT NULL</text>
+</g>
+<!-- Specializations&#45;&gt;Teachers -->
+<g id="edge2" class="edge" style="opacity: 1;">
+<title>Specializations:teacher-&gt;Teachers:id</title>
+<path fill="none" stroke="#5ea54a" d="M169.5,-198C196.46,-198 205.64,-197.23 228.29,-197.04"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="228.51,-200.54 238.5,-197 228.49,-193.54 228.51,-200.54"></polygon>
+</g>
+<!-- Students&#45;&gt;Groups -->
+<g id="edge4" class="edge" style="opacity: 1;">
+<title>Students:groupid-&gt;Groups:id</title>
+<path fill="none" stroke="#5ea54a" d="M478,-45C463.1,-45 457.01,-45 445.83,-45"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="445.5,-41.5 435.5,-45 445.5,-48.5 445.5,-41.5"></polygon>
+</g>
+<!-- Teachers&#45;&gt;Specializations -->
+<g id="edge5" class="edge" style="opacity: 1;">
+<title>Teachers:specialization-&gt;Specializations:id</title>
+<path fill="none" stroke="#5ea54a" d="M238.5,-125C191.51,-125 215.89,-202.99 179.49,-214.57"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="178.9,-211.12 169.5,-216 179.89,-218.05 178.9,-211.12"></polygon>
+</g>
+<!-- Lessons -->
+<g id="node6" class="node" style="opacity: 1;">
+<title>Lessons</title>
+<polygon fill="#232d95" stroke="transparent" points="0.5,-135 0.5,-153 195.5,-153 195.5,-135 0.5,-135"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-135 0.5,-153 195.5,-153 195.5,-135 0.5,-135"></polygon>
+<text text-anchor="start" x="3.5" y="-142" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">Lessons</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-117 0.5,-135 195.5,-135 195.5,-117 0.5,-117"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-117 0.5,-135 195.5,-135 195.5,-117 0.5,-117"></polygon>
+<text text-anchor="start" x="3.5" y="-124" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="18.78" y="-124" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.78" y="-124" font-family="opensans" font-size="10.00" fill="white"> id INT SERIAL</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-99 0.5,-117 195.5,-117 195.5,-99 0.5,-99"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-99 0.5,-117 195.5,-117 195.5,-99 0.5,-99"></polygon>
+<text text-anchor="start" x="3.5" y="-105" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lessontype VARCHAR(32) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-81 0.5,-99 195.5,-99 195.5,-81 0.5,-81"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-81 0.5,-99 195.5,-99 195.5,-81 0.5,-81"></polygon>
+<text text-anchor="start" x="3.5" y="-87" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lessondate DATE NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-63 0.5,-81 195.5,-81 195.5,-63 0.5,-63"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-63 0.5,-81 195.5,-81 195.5,-63 0.5,-63"></polygon>
+<text text-anchor="start" x="3.5" y="-69" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;timeframe INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-45 0.5,-63 195.5,-63 195.5,-45 0.5,-45"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-45 0.5,-63 195.5,-63 195.5,-45 0.5,-45"></polygon>
+<text text-anchor="start" x="3.44" y="-51" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;auditorium VARCHAR(16) NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-27 0.5,-45 195.5,-45 195.5,-27 0.5,-27"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-27 0.5,-45 195.5,-45 195.5,-27 0.5,-27"></polygon>
+<text text-anchor="start" x="3.5" y="-34" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="18.78" y="-34" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.78" y="-34" font-family="opensans" font-size="10.00" fill="white"> teacher INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="0.5,-9 0.5,-27 195.5,-27 195.5,-9 0.5,-9"></polygon>
+<polygon fill="none" stroke="white" points="0.5,-9 0.5,-27 195.5,-27 195.5,-9 0.5,-9"></polygon>
+<text text-anchor="start" x="3.5" y="-16" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="18.78" y="-16" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="25.78" y="-16" font-family="opensans" font-size="10.00" fill="white"> groupid INT NOT NULL</text>
+</g>
+<!-- Lessons&#45;&gt;Groups -->
+<g id="edge7" class="edge" style="opacity: 1;">
+<title>Lessons:groupid-&gt;Groups:id</title>
+<path fill="none" stroke="#5ea54a" d="M195,-18C213.36,-18 215.14,-36.17 227.54,-42.7"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="226.97,-46.16 237.5,-45 228.54,-39.34 226.97,-46.16"></polygon>
+</g>
+<!-- Lessons&#45;&gt;Teachers -->
+<g id="edge6" class="edge" style="opacity: 1;">
+<title>Lessons:teacher-&gt;Teachers:id</title>
+<path fill="none" stroke="#5ea54a" d="M195,-36C265.36,-36 174.56,-181.06 228.54,-195.8"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="228.15,-199.27 238.5,-197 228.99,-192.33 228.15,-199.27"></polygon>
+</g>
+<!-- Grades -->
+<g id="node7" class="node" style="opacity: 1;">
+<title>Grades</title>
+<polygon fill="#232d95" stroke="transparent" points="20.5,-351 20.5,-369 174.5,-369 174.5,-351 20.5,-351"></polygon>
+<polygon fill="none" stroke="white" points="20.5,-351 20.5,-369 174.5,-369 174.5,-351 20.5,-351"></polygon>
+<text text-anchor="start" x="23.5" y="-358" font-family="opensans" font-weight="bold" font-size="10.00" fill="white">Grades</text>
+<polygon fill="#404040" stroke="transparent" points="20.5,-333 20.5,-351 174.5,-351 174.5,-333 20.5,-333"></polygon>
+<polygon fill="none" stroke="white" points="20.5,-333 20.5,-351 174.5,-351 174.5,-333 20.5,-333"></polygon>
+<text text-anchor="start" x="23.5" y="-340" font-family="opensans" font-size="10.00" fill="#e2c044">PK </text>
+<text text-anchor="start" x="38.78" y="-340" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="45.78" y="-340" font-family="opensans" font-size="10.00" fill="white"> id INT SERIAL</text>
+<polygon fill="#404040" stroke="transparent" points="20.5,-315 20.5,-333 174.5,-333 174.5,-315 20.5,-315"></polygon>
+<polygon fill="none" stroke="white" points="20.5,-315 20.5,-333 174.5,-333 174.5,-315 20.5,-315"></polygon>
+<text text-anchor="start" x="23.5" y="-322" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="38.78" y="-322" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="45.78" y="-322" font-family="opensans" font-size="10.00" fill="white"> student INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="20.5,-297 20.5,-315 174.5,-315 174.5,-297 20.5,-297"></polygon>
+<polygon fill="none" stroke="white" points="20.5,-297 20.5,-315 174.5,-315 174.5,-297 20.5,-297"></polygon>
+<text text-anchor="start" x="23.5" y="-304" font-family="opensans" font-size="10.00" fill="#e2c044">FK </text>
+<text text-anchor="start" x="38.78" y="-304" font-family="opensans" font-size="10.00"> | </text>
+<text text-anchor="start" x="45.78" y="-304" font-family="opensans" font-size="10.00" fill="white"> discipline INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="20.5,-279 20.5,-297 174.5,-297 174.5,-279 20.5,-279"></polygon>
+<polygon fill="none" stroke="white" points="20.5,-279 20.5,-297 174.5,-297 174.5,-279 20.5,-279"></polygon>
+<text text-anchor="start" x="23.5" y="-285" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;grade INT NOT NULL</text>
+<polygon fill="#404040" stroke="transparent" points="20.5,-261 20.5,-279 174.5,-279 174.5,-261 20.5,-261"></polygon>
+<polygon fill="none" stroke="white" points="20.5,-261 20.5,-279 174.5,-279 174.5,-261 20.5,-261"></polygon>
+<text text-anchor="start" x="23.49" y="-267" font-family="opensans" font-size="10.00" fill="white"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lessondate DATE NOT NULL</text>
+</g>
+<!-- Grades&#45;&gt;Disciplines -->
+<g id="edge8" class="edge" style="opacity: 1;">
+<title>Grades:discipline-&gt;Disciplines:id</title>
+<path fill="none" stroke="#5ea54a" d="M175.5,-306C201.32,-306 201.78,-277.92 221.06,-270.69"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="221.73,-274.12 231,-269 220.56,-267.22 221.73,-274.12"></polygon>
+</g>
+<!-- Grades&#45;&gt;Students -->
+<g id="edge9" class="edge" style="opacity: 1;">
+<title>Grades:student-&gt;Students:id</title>
+<path fill="none" stroke="#5ea54a" d="M175.5,-324C294.25,-324 353.23,-383.87 442,-305 502.74,-251.03 402.69,-128.66 467.7,-117.78"></path>
+<polygon fill="#5ea54a" stroke="#5ea54a" points="468.29,-121.24 478,-117 467.76,-114.26 468.29,-121.24"></polygon>
+</g>
+</g>
+</svg>
